@@ -8,17 +8,23 @@
 
 body{
     display: flex;
-    background: #0c1022;
+    /*background: #0c1022;*/
     justify-content: center;
     align-items: center;
+    background-image: url('servers.jpg');
     min-height: 100vh;
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
 }
 .container{
+
     position: relative;
     width: 450px;
+    background: transparent;
+    backdrop-filter: blur(30px);
     height: 600px;
-    background: rgba(0,0,0.75);
+    /*background: rgba(0,0,0.75);*/
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -59,7 +65,8 @@ body{
 .image{
     position: absolute;
     inset: 5px;
-    background-color: #0c1022;
+    background: transparent;
+    backdrop-filter: blur(600px);
     z-index: 1;
     border-radius: 16px;
 }
@@ -102,7 +109,7 @@ input:valid ~ label{
      transform:translateY(-50%)
      font-size: 16px;
      pointer-events: none;
-     transform: .3s;
+     transform: 0.3s;
 
 
 }
@@ -110,7 +117,7 @@ h1{
 color:wheat;
 }
 
-}
+
 header {
     background: transparent;
     backdrop-filter: blur(10px);
